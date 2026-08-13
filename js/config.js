@@ -1,0 +1,1 @@
+const API_groq = 'cole a chame aqui';

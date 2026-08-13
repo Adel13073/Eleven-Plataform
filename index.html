@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELEVEN — Plataforma de IA para Empresas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">ELE<span>VEN</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#platform">Plataforma</a></li>
+                <li><a href="#pricing">Preços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="btn btn-nav" onclick="openChat()">Falar com Especialista</button>
+            <button class="nav-burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-drawer" id="drawer">
+            <a href="#services" class="drawer-link">Serviços</a>
+            <a href="#platform" class="drawer-link">Plataforma</a>
+            <a href="#pricing" class="drawer-link">Preços</a>
+            <a href="#about" class="drawer-link">Sobre</a>
+            <a href="#contact" class="drawer-link">Contato</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+        <div class="orb orb-3" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-badge reveal">
+                <span class="badge-pulse"></span>
+                Plataforma em operação — Angola &amp; PALOP
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="title-line">Inteligência</span>
+                <span class="title-line gradient-text">que transforma</span>
+                <span class="title-line">decisões</span>
+            </h1>
+            <p class="hero-sub reveal">Da voz ao insight, da rota ao resultado — a ELEVEN integra IA empresarial ao seu fluxo de trabalho sem atrito e em tempo real.</p>
+            <div class="hero-ctas reveal">
+                <a href="#services" class="btn btn-primary">
+                    <span>Começar agora</span>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#platform" class="btn btn-ghost">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M6 5.5l4 2-4 2V5.5z" fill="currentColor"/></svg>
+                    <span>Ver demonstração</span>
+                </a>
+            </div>
+            <div class="stats reveal">
+                <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Precisão de Voz</span></div>
+                <div class="stat-sep"></div>
+                <div class="stat"><span class="stat-num">3×</span><span class="stat-label">Mais Rápido</span></div>
+                <div class="stat-sep"></div>
+                <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Empresas</span></div>
+                <div class="stat-sep"></div>
+                <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Disponível</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">O que oferecemos</p>
+                <h2 class="section-title">Cinco módulos de IA,<br />uma plataforma unificada</h2>
+                <p class="section-sub">Integração direta com os seus sistemas existentes. Sem migrações complexas.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Atendimento Inteligente -->
+                <div class="service-card reveal" data-delay="0">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12h8"/>
+                            <path d="M12 8v8"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Atendimento Inteligente</h3>
+                    <p class="card-desc">Agentes conversacionais com memória contextual que resolvem solicitações complexas e escalam para humanos apenas quando necessário.</p>
+                    <div class="card-tag">NLP · GPT-4</div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <!-- Reconhecimento de Voz -->
+                <div class="service-card reveal" data-delay="80">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" y1="19" x2="12" y2="22"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Reconhecimento de Voz</h3>
+                    <p class="card-desc">Transcrição em tempo real com 98% de precisão. Suporte nativo a sotaques angolanos, mozambicanos e de todo o espaço lusófono.</p>
+                    <div class="card-tag">Whisper · Real-time</div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <!-- Análise de Dados -->
+                <div class="service-card reveal" data-delay="160">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="21 12 21 19 3 19 3 5 12 5"/>
+                            <path d="M15 9 21 3 17 7 15 9Z"/>
+                            <path d="M8 13l3 3 5-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Análise de Dados</h3>
+                    <p class="card-desc">Dashboards preditivos gerados automaticamente. Deteção de anomalias e projeções de tendência com intervalo de confiança em segundos.</p>
+                    <div class="card-tag">ML · BI · Pandas</div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <!-- Otimização de Rotas -->
+                <div class="service-card reveal" data-delay="240">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Otimização de Rotas</h3>
+                    <p class="card-desc">Algoritmos de roteamento inteligente calibrados para a infraestrutura viária angolana — redução média de 38% em custos logísticos.</p>
+                    <div class="card-tag">GraphOpt · Maps</div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <!-- Geração de Imagens -->
+                <div class="service-card reveal" data-delay="320">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5-5 5-3-3-5 5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Geração de Imagens</h3>
+                    <p class="card-desc">Visuais profissionais gerados por IA — logos, ilustrações e mockups de produto a partir de texto, em menos de cinco segundos.</p>
+                    <div class="card-tag">Flux AI · Sem limites</div>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLATFORM ===== -->
+    <section class="platform section" id="platform">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Plataforma</p>
+                <h2 class="section-title">Uma interface unificada<br />para toda a sua IA</h2>
+            </div>
+            <div class="platform-wrap reveal">
+                <div class="dashboard">
+                    <div class="db-sidebar">
+                        <div class="db-logo">E11</div>
+                        <nav class="db-nav">
+                            <a class="db-nav-item active" title="Visão Geral"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" fill="currentColor" opacity=".8"/><rect x="10" y="2" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="2" y="10" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="10" y="10" width="6" height="6" rx="1" fill="currentColor" opacity=".2"/></svg></a>
+                            <a class="db-nav-item" title="Atendimento" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2.5a6.5 6.5 0 1 1 0 13" stroke="currentColor" stroke-width="1.3"/><circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="1.3"/></svg></a>
+                            <a class="db-nav-item" title="Voz" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2.5a3 3 0 0 1 3 3v4a3 3 0 0 1-6 0v-4a3 3 0 0 1 3-3z" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 9.5A4.5 4.5 0 0 0 13.5 9.5M9 14v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+                            <a class="db-nav-item" title="Dados" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 13l3-4 3 3 3-5 3 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a class="db-nav-item" title="Rotas" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="5" cy="5" r="2" stroke="currentColor" stroke-width="1.3"/><circle cx="13" cy="13" r="2" stroke="currentColor" stroke-width="1.3"/><path d="M7 5h4a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+                            <a class="db-nav-item" title="Imagens" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/><circle cx="6.5" cy="6.5" r="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M2 12l4-4 3 3 2-2 5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </nav>
+                    </div>
+                    <div class="db-main">
+                        <div class="db-topbar">
+                            <div class="db-topbar-left">
+                                <span class="db-title">Visão Geral</span>
+                                <span class="db-live-badge"><span class="live-dot"></span>Ao vivo</span>
+                            </div>
+                            <div class="db-search"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.2"/><path d="M9 9l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Buscar…</div>
+                        </div>
+                        <div class="db-kpis">
+                            <div class="db-kpi"><span class="kpi-label">Consultas hoje</span><span class="kpi-num">12,849</span><span class="kpi-delta up">↑ 18%</span></div>
+                            <div class="db-kpi"><span class="kpi-label">Rotas otimizadas</span><span class="kpi-num">3,210</span><span class="kpi-delta up">↑ 7%</span></div>
+                            <div class="db-kpi"><span class="kpi-label">Latência média</span><span class="kpi-num">0.34s</span><span class="kpi-delta up">↓ 12ms</span></div>
+                            <div class="db-kpi"><span class="kpi-label">Satisfação</span><span class="kpi-num">97.2%</span><span class="kpi-delta up">↑ 2%</span></div>
+                        </div>
+                        <div class="db-content-row">
+                            <div class="db-chart-box">
+                                <div class="db-chart-header"><span>Atividade — Últimos 7 dias</span><span class="db-chart-tag">IA</span></div>
+                                <div class="db-chart">
+                                    <div class="bar-group"><div class="bar" style="--h:55%"></div><span>Seg</span></div>
+                                    <div class="bar-group"><div class="bar" style="--h:80%"></div><span>Ter</span></div>
+                                    <div class="bar-group"><div class="bar" style="--h:65%"></div><span>Qua</span></div>
+                                    <div class="bar-group"><div class="bar active" style="--h:95%"></div><span>Qui</span></div>
+                                    <div class="bar-group"><div class="bar" style="--h:72%"></div><span>Sex</span></div>
+                                    <div class="bar-group"><div class="bar" style="--h:43%"></div><span>Sáb</span></div>
+                                    <div class="bar-group"><div class="bar" style="--h:38%"></div><span>Dom</span></div>
+                                </div>
+                            </div>
+                            <div class="db-io">
+                                <div class="db-io-header">Console</div>
+                                <div>
+                                    <div class="io-tabs">
+                                        <button class="io-tab active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 17 20 17 20 7"/><line x1="4" y1="12" x2="20" y2="12"/></svg>
+                                            Texto
+                                        </button>
+                                        <button class="io-tab">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                                            Voz
+                                        </button>
+                                        <button class="io-tab">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+                                            Ficheiro
+                                        </button>
+                                    </div>
+                                    <textarea class="io-textarea" placeholder="Digite uma consulta…" rows="3">Analise as vendas da região Sul e gere um relatório executivo com projeção para Q3.</textarea>
+                                </div>
+                                <div class="db-io-output">
+                                    <div class="io-output-label"><span class="live-dot"></span>Resultado</div>
+                                    <p class="io-output-text">✓ Região Sul — crescimento de <strong>+23%</strong> QoQ. Projeção Q3: AOA 4.2B. Drivers principais: expansão em Benguela e Huambo. Recomendação: aumentar stock em 15%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Planos</p>
+                <h2 class="section-title">Simples, transparente<br />e escalável</h2>
+                <p class="section-sub">Sem taxas ocultas. Cancele quando quiser.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Básico -->
+                <div class="pricing-card reveal" data-delay="0">
+                    <div class="plan-badge">Básico</div>
+                    <div class="plan-price"><sup>Kz</sup>49.990<sub>/mês</sub></div>
+                    <p class="plan-desc">Ideal para startups e pequenas equipas que estão a começar com IA.</p>
+                    <ul class="plan-features">
+                        <li>✓ 10.000 consultas/mês</li>
+                        <li>✓ Atendimento Inteligente</li>
+                        <li>✓ Reconhecimento de Voz (básico)</li>
+                        <li>✓ Dashboard analítico</li>
+                        <li>✗ Otimização de Rotas</li>
+                        <li>✗ Geração de Imagens</li>
+                        <li>✗ Suporte prioritário</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline w-full">Começar Grátis</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="pricing-card pro reveal" data-delay="100">
+                    <div class="plan-popular">Mais Popular</div>
+                    <div class="plan-badge">Pro</div>
+                    <div class="plan-price"><sup>Kz</sup>149.990<sub>/mês</sub></div>
+                    <p class="plan-desc">Para empresas que precisam de toda a potência da plataforma ELEVEN.</p>
+                    <ul class="plan-features">
+                        <li>✓ 100.000 consultas/mês</li>
+                        <li>✓ Todos os módulos de IA</li>
+                        <li>✓ Voz em tempo real</li>
+                        <li>✓ Otimização de Rotas</li>
+                        <li>✓ Geração de Imagens (500/mês)</li>
+                        <li>✓ API REST completa</li>
+                        <li>✓ Suporte 24h por chat</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary w-full">Assinar Pro</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="pricing-card reveal" data-delay="200">
+                    <div class="plan-badge">Premium</div>
+                    <div class="plan-price"><sup>Kz</sup>499.990<sub>/mês</sub></div>
+                    <p class="plan-desc">Solução enterprise com SLA garantido, integração dedicada e modelo de IA personalizado.</p>
+                    <ul class="plan-features">
+                        <li>✓ Consultas ilimitadas</li>
+                        <li>✓ Modelo de IA personalizado</li>
+                        <li>✓ Infraestrutura dedicada</li>
+                        <li>✓ Integração ERP/CRM</li>
+                        <li>✓ Imagens ilimitadas</li>
+                        <li>✓ SLA 99.9% garantido</li>
+                        <li>✓ Gestor de sucesso dedicado</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline w-full">Falar com Vendas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="section-eyebrow">Sobre a ELEVEN</p>
+                    <h2 class="section-title">Construída para<br />o mercado africano</h2>
+                    <p class="about-desc">A ELEVEN nasceu da convicção de que a inteligência artificial não é privilégio de grandes corporações. Desenvolvemos tecnologia de nível enterprise adaptada ao contexto angolano e dos PALOP — com suporte nativo a línguas locais, integração com infraestrutura regional e modelos calibrados para os nossos dados.</p>
+                </div>
+                <div class="about-pillars reveal">
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <div><h4 class="pillar-title">Missão</h4><p class="pillar-text">Tornar a IA acessível e transformadora para organizações de qualquer dimensão, acelerando decisões com tecnologia de ponta adaptada ao nosso contexto.</p></div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <div><h4 class="pillar-title">Visão</h4><p class="pillar-text">Ser a plataforma de IA de referência em África até 2027, conectando dados, voz e automação num único ecossistema integrado.</p></div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <div><h4 class="pillar-title">Valores</h4><p class="pillar-text">Inovação contínua, transparência radical, ética no desenvolvimento de IA e obsessão pelos resultados do cliente.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="section-eyebrow">Contato</p>
+                    <h2 class="section-title">Vamos construir<br />algo juntos?</h2>
+                    <p class="contact-desc">A nossa equipa está pronta para perceber o seu desafio e desenhar a solução certa.</p>
+                    <div class="contact-channels">
+                        <a href="mailto:1.eleven.onze.1@gmail.com" class="channel">
+                            <div class="channel-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div><div class="channel-label">E-mail</div><div class="channel-val">1.eleven.onze.1@gmail.com</div></div>
+                        </a>
+                        <a href="https://wa.me/244958432897" class="channel" target="_blank" rel="noopener">
+                            <div class="channel-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <div><div class="channel-label">WhatsApp</div><div class="channel-val">+244 958 432 897</div></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal">
+                    <div class="form-inner" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group"><label class="form-label">Nome</label><input type="text" class="form-input" placeholder="O seu nome"/></div>
+                            <div class="form-group"><label class="form-label">Empresa</label><input type="text" class="form-input" placeholder="A sua empresa"/></div>
+                        </div>
+                        <div class="form-group"><label class="form-label">E-mail</label><input type="email" class="form-input" placeholder="voce@empresa.com"/></div>
+                        <div class="form-group"><label class="form-label">Mensagem</label><textarea class="form-input form-textarea" placeholder="Descreva o seu projeto ou desafio…" rows="4"></textarea></div>
+                        <button class="btn btn-primary w-full" id="form-submit">
+                            Enviar Mensagem
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="form-success" id="form-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px;">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                <path d="M12 15a3 3 0 0 0 3-3v-2a3 3 0 0 0-6 0v2a3 3 0 0 0 3 3z"/>
+                                <path d="M12 9c1.5 0 3 .5 4.5 2.5"/>
+                                <path d="M12 6c.5 0 1 .1 1.5.4"/>
+                            </svg>
+                            Mensagem enviada — entraremos em contacto em breve.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <a href="#home" class="nav-logo">ELE<span>VEN</span></a>
+                    <p class="footer-tagline">Inteligência em Software.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Serviços</a>
+                    <a href="#platform">Plataforma</a>
+                    <a href="#pricing">Preços</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-copy">© 2025 ELEVEN. Todos os direitos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CHAT WIDGET ===== -->
+    <div id="eleven-chat" class="open">
+        <button id="chat-toggle-btn" onclick="toggleChat()" aria-label="Abrir chat">
+            <svg class="icon-chat" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M20 11C20 15.97 15.97 20 11 20C9.39 20 7.89 19.56 6.6 18.8L2 20L3.2 15.4C2.44 14.11 2 12.61 2 11C2 6.03 6.03 2 11 2C15.97 2 20 6.03 20 11Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div id="chat-window">
+            <div class="chat-head">
+                <div class="chat-head-info">
+                    <div class="chat-avatar">E</div>
+                    <div>
+                        <div class="chat-head-name">ELEVEN Assistant</div>
+                        <div class="chat-head-status"><span class="chat-status-dot"></span>Online · Llama 3.3</div>
+                    </div>
+                </div>
+            </div>
+            <div id="chat-messages">
+                <div class="msg-ai">Olá! Sou o assistente da <strong>ELEVEN Technology Angola</strong>.<br />Como posso ajudar hoje?</div>
+            </div>
+            <div class="chat-chips" id="chat-chips">
+                <button class="chip" onclick="chipSend(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                    Preços em Kz
+                </button>
+                <button class="chip" onclick="chipSend(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="10" x="3" y="11" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16.01"/><line x1="16" y1="16" x2="16" y2="16.01"/></svg>
+                    Que serviços oferecem?
+                </button>
+                <button class="chip" onclick="chipSend(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 12 21 19 3 19 3 5 12 5"/><path d="M15 9 21 3 17 7 15 9Z"/><path d="M8 13l3 3 5-5"/></svg>
+                    Análise de dados
+                </button>
+                <button class="chip" onclick="chipSend(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    Falar com a equipa
+                </button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-user-input" placeholder="Escreva a sua mensagem…" autocomplete="off" />
+                <button class="chat-send-btn" id="chat-send" aria-label="Enviar">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M8.5 3l4 4.5-4 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+   <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
